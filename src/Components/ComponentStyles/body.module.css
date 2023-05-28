@@ -1,0 +1,20 @@
+body {
+  background-color: #f2eaea;
+}
+
+h3 {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 300;
+  font-family: "Avalors Personal Use";
+  font-size: 15px;
+  letter-spacing: 8px;
+}
+p {
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 5px;
+  font-size: 9px;
+  max-width: 30rem;
+}
