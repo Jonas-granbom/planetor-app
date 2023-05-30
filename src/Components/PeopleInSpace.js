@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Styles from "./ComponentStyles/peopleinspace.module.css";
 
 function PeopleInSpace() {
   const [people, setPeople] = useState([]);
 
   useEffect(() => {
     axios
-      .get(`http://planetor.strangled.net/api/getpeopleinspace`)
+      .get(`http://apiplanetor.strangled.net/getpeopleinspace`)
       .then((res) => {
         setPeople(res.data);
       })
@@ -15,11 +16,10 @@ function PeopleInSpace() {
       });
   }, []);
   return (
-    <div>
+    <div className={Styles.text}>
       {people.map((p) => (
         <li>
-          {p.name}
-          {p.craft}
+          {p.name} is currently on the spacecraft: {p.craft}
         </li>
       ))}
     </div>

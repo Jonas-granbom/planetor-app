@@ -8,7 +8,7 @@ function CelestialBodyData(props) {
 
   useEffect(() => {
     axios
-      .get(`http://planetor.strangled.net/api/celestialbody/${props.id}`)
+      .get(`http://apiplanetor.strangled.net/celestialbody/${props.id}`)
       .then((res) => {
         setCelestialBody(res.data);
       })
